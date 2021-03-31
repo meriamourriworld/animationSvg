@@ -1,9 +1,19 @@
-var box1 = document.querySelector('.box1');
-var box2 = document.querySelector('.box2');
-var box3 = document.querySelector('.box3');
-var building = document.querySelector('.building');
 
-var domNode1 = anime({
+
+let son = document.querySelector("#chouetteSon")
+setTimeout(() =>{
+    son.play();
+}, 3000);
+
+
+
+let box1 = document.querySelector('.box1');
+let box2 = document.querySelector('.box2');
+let box3 = document.querySelector('.box3');
+let building = document.querySelector('.building');
+
+
+let domNode1 = anime({
     targets: box1,
     translateY: 600,
     translateX: 0,
@@ -12,7 +22,7 @@ var domNode1 = anime({
     duration:1000
   });
 
-  var domNode2 = anime({
+  let domNode2 = anime({
     targets: box2,
     translateY: 600,
     translateX: 0,
@@ -21,7 +31,7 @@ var domNode1 = anime({
     duration:1000
 });
 
-  var domNode3 = anime({
+  let domNode3 = anime({
     targets: box3,
     translateY: 555,
     translateX: 0,
@@ -30,7 +40,7 @@ var domNode1 = anime({
     duration:1000
 });
 
-var domNode4 = anime({
+let domNode4 = anime({
     targets: building,
     translateY: 555,
     translateX: 0,
