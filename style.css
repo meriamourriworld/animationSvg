@@ -54,6 +54,13 @@ body{
     width: 100px;
     height: 50px;
 }
+.building{
+    position: absolute;
+    top: -370px;
+    left: 300px;
+    width: 400px;
+    height: 370px;
+}
 .box1{
     top: -50px;
     right: 250px;
