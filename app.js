@@ -3,9 +3,12 @@
 let son = document.querySelector("#chouetteSon")
 setTimeout(() =>{
     son.play();
-}, 3000);
+}, 3500);
 
-
+let son1 = document.querySelector("#pub")
+setTimeout(() =>{
+    son1.play();
+}, 18000);
 
 let box1 = document.querySelector('.box1');
 let box2 = document.querySelector('.box2');
