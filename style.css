@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 768px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #060524, #324d94);
+}
+
+.pubWrapper svg{
+    width: 1024px;
+    height: 100vh;
+}
+.pubWrapper{
+    position: relative;
+}
+/************************NUAGE**********************/
+#Calque_2,.cls-30{
+    animation: 5s nuageFlottant linear infinite alternate;
+}
+#Calque_2{
+    animation-name: nuageFlottant, deplacementHibou;
+    animation-duration: 5000ms, 3000ms;
+    animation-delay: 0ms, 15s; /* add this */
+    animation-timing-function: linear, linear;
+    animation-iteration-count: 3, 1;
+    animation-fill-mode: none,forwards;
+}
+
+@keyframes nuageFlottant{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(800px);
+    }
+}
+@keyframes deplacementHibou{
+    from{
+        transform: translate(800px);
+    }
+    to{
+        transform:translate(1800px,1110px);
+    }
+}
+
+/************************BOXES**********************/
+.box{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+}
+.box1{
+    top: 550px;
+    right: 250px;
+}
+.box2{
+    top: 550px;
+    right: 330px;
+}
+.box3{
+    top: 505px;
+    right: 300px;
+}
